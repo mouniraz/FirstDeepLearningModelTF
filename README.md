@@ -38,4 +38,17 @@ model.fit(X_train, y_train, epochs=150, batch_size=10)
 accuracy = model.evaluate(X_test, y_test)
 print('Accuracy: %.2f' % (accuracy*100))
 ```
-## Update parameter of initial Model 
+## discussion about initial Model 
+<li>compare beteen accuracy calculated in the last epoch and accuraty for inseen data? How can we ameliorate this value</li>
+<li>run the below code: It creates a set of classifications for each of the testinput, and then prints the first entry in the classifications.</li>
+```python
+prediction =model.predict(X_test)
+``` 
+<li> The output, after you run it is a list of numbers. Why do you think this is, and what do those numbers represent? </li>
+## change some parameters 
+<ol> incrase neuron number in dense layer and say how accuracy and time of executing is influenced ( choose 20 and 512) </ol>
+
+<ol>Consider the final (output) layers. Why are there 1 of them? What would happen if you had a different amount than 1? For example, try training the network with2</ol>
+<ol>Consider the effects of additional layers in the network. What will happen if you add another layer between the one with 20 and the final layer with1 </ol>
+<ol>Consider the impact of training for more or less epochs</ol>
+ 
