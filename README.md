@@ -41,9 +41,9 @@ print('Accuracy: %.2f' % (accuracy*100))
 ## discussion about initial Model 
 <li>compare beteen accuracy calculated in the last epoch and accuraty for inseen data? How can we ameliorate this value</li>
 <li>run the below code: It creates a set of classifications for each of the testinput, and then prints the first entry in the classifications.</li>
-```python <br>
+```python
 prediction =model.predict(X_test)
-``` 
+```
 <li> The output, after you run it is a list of numbers. Why do you think this is, and what do those numbers represent? </li>
 ## change some parameters 
 <ol> incrase neuron number in dense layer and say how accuracy and time of executing is influenced ( choose 20 and 512) </ol>
