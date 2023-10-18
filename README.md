@@ -22,7 +22,7 @@ df.describe()
 X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.20,random_state=42,stratify=y)
 ```
 ## Define and compile model
-```python
+```python<br>
 model = Sequential()
 model.add(Dense(12, input_shape=(8,), activation='relu'))
 model.add(Dense(8, activation='relu'))
@@ -41,7 +41,7 @@ print('Accuracy: %.2f' % (accuracy*100))
 ## discussion about initial Model 
 <li>compare beteen accuracy calculated in the last epoch and accuraty for inseen data? How can we ameliorate this value</li>
 <li>run the below code: It creates a set of classifications for each of the testinput, and then prints the first entry in the classifications.</li>
-```python
+```python <br>
 prediction =model.predict(X_test)
 ``` 
 <li> The output, after you run it is a list of numbers. Why do you think this is, and what do those numbers represent? </li>
