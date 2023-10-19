@@ -23,6 +23,10 @@ X_train,X_test,y_train,y_test=train_test_split(X,y,test_size=0.20,random_state=4
 ```
 ## Define and compile model
 ```python<br>
+from tensorflow import keras
+from keras.layers import Dense
+from keras.models import Sequential
+
 model = Sequential()
 model.add(Dense(12, input_shape=(8,), activation='relu'))
 model.add(Dense(8, activation='relu'))
