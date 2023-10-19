@@ -35,7 +35,7 @@ model.fit(X_train, y_train, epochs=150, batch_size=10)
 ```
 ## Test and evaluate Model
 ```python
-accuracy = model.evaluate(X_test, y_test)
+_,accuracy = model.evaluate(X_test, y_test)
 print('Accuracy: %.2f' % (accuracy*100))
 ```
 ## discussion about initial Model 
