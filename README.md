@@ -39,16 +39,16 @@ accuracy = model.evaluate(X_test, y_test)
 print('Accuracy: %.2f' % (accuracy*100))
 ```
 ## discussion about initial Model 
-<li>compare beteen accuracy calculated in the last epoch and accuraty for inseen data? How can we ameliorate this value</li>
-<li>run the below code: It creates a set of classifications for each of the testinput, and then prints the first entry in the classifications.</li> </br>
-````python
+1. compare beteen accuracy calculated in the last epoch and accuraty for inseen data? How can we ameliorate this value
+2. run the below code: It creates a set of classifications for each of the testinput, and then prints the first entry in the classifications.
+```python
 prediction =model.predict(X_test)
-````
-<li> The output, after you run it is a list of numbers. Why do you think this is, and what do those numbers represent? </li>
+```
 ## change some parameters 
-<ol> incrase neuron number in dense layer and say how accuracy and time of executing is influenced ( choose 20 and 512) </ol>
 
-<li>Consider the final (output) layers. Why are there 1 of them? What would happen if you had a different amount than 1? For example, try training the network with2</li>
-<li>Consider the effects of additional layers in the network. What will happen if you add another layer between the one with 20 and the final layer with1 </li>
-<li>Consider the impact of training for more or less epochs</li>
+1. incrase neuron number in dense layer and say how accuracy and time of executing is influenced ( choose 20 and 512)
+2. Consider the final (output) layers. Why are there 1 of them? What would happen if you had a different amount than 1? For example, try training the network with different number
+3. Consider the effects of additional layers in the network. What will happen if you add another layer between the one with 20 and the final layer
+4. Consider the impact of training for more or less epochs
+   
  
